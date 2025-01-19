@@ -45,3 +45,32 @@ a:hover {
     transform: scale(1, 1);
   }
 }
+
+.test {
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  background: linear-gradient(60deg, #a6d2ff 0%, #eee 70%, #a6d2ff 80%);
+  background-size: 200% 200%;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: background 0.5s cubic-bezier(0.71, 0.55, 0.62, 1.57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeScale 0.3s;
+}
+
+.test:hover {
+  background-position: right;
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
